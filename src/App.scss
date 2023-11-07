@@ -1,0 +1,65 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.main-content {
+    background: #f0f7ff;
+    margin-left: 200px;
+    padding: 1rem;
+}
+
+.CstmDrp {
+    display: flex;
+    
+    .btn {
+        border-color: #000;
+        margin: 0 10px;
+        font-size: 14px;
+
+        &:hover,
+        &:focus,
+        &:focus-visible {
+            box-shadow: none !important;
+            border-color: #000;
+        }
+    }
+
+    .primaryBtn{
+        background: #dbecff;
+        color: green;
+        border: none;
+        padding: .5rem 1rem;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+
+    .inbox{
+        svg{
+            font-size: 22px;
+            color: lightskyblue;
+        }
+    }
+    .outbox{
+        svg{
+            font-size: 22px;
+            color: green;
+        }
+    }
+}
+
+
+.table{
+    th{
+        font-size: 12px;
+        color: #a1a1a1 !important;
+    }
+    tr{
+        font-weight: bold;
+    }
+}
