@@ -36,11 +36,8 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route>
-        <Route path='/' element={<RouteWithlodaer />}>
-          <Route index element={<Dashboard />} />
-        </Route>
         <Route path='/' element={<RouteWithSidebar />}>
-          <Route path='dashboard' element={<Dashboard />} />
+          <Route index element={<Dashboard />} />
         </Route>
       </Route>
     )

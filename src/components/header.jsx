@@ -15,14 +15,16 @@ import { BsBellFill } from 'react-icons/bs';
 export const Navbar = () => {
 
     const [dropdownOpen, setDropdownOpen] = useState(false);
-
     const toggle = () => setDropdownOpen((prevState) => !prevState);
+
+    const [notify, setnotify] = useState(false);
+    const notifytoggle = () => setnotify((prevState) => !prevState);
 
     return (
         <div className="container-fluid">
             <nav className="navbar">
                 <div className="nav-brand">
-                    
+
                 </div>
 
                 <div className="navbar-items">
@@ -32,13 +34,29 @@ export const Navbar = () => {
                             <input type="text" class="form-control" placeholder="search" />
                         </li>
                         <li className="nav-link">
-                            <div className="position-relative">
-                                <BsBellFill />
-                                <span class="position-absolute top-25 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
-                                    <span class="visually-hidden">New alerts</span>
-                                </span>
+                            <div className='drop'>
+                                <Dropdown isOpen={notify} toggle={notifytoggle}>
+                                    <DropdownToggle>
+                                        <div className="position-relative">
+                                            <BsBellFill />
+                                            <span class="position-absolute top-25 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                                                <span class="visually-hidden">New alerts</span>
+                                            </span>
+                                        </div>
+                                    </DropdownToggle>
+                                    <DropdownMenu>
+                                        <DropdownItem>
+                                            Notification 1
+                                        </DropdownItem>
+                                        <DropdownItem>
+                                            Notification 2
+                                        </DropdownItem>
+                                        <DropdownItem>
+                                            Notification 3
+                                        </DropdownItem>
+                                    </DropdownMenu>
+                                </Dropdown>
                             </div>
-
                         </li>
                         <li class="nav-link">
                             <div className='drop'>
