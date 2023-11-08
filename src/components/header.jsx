@@ -8,6 +8,7 @@ import {
 import './styles.scss';
 import { Link } from 'react-router-dom';
 import user from '../assets/user.png';
+import {BiMenuAltLeft} from 'react-icons/bi';
 
 import { FiSearch } from 'react-icons/fi';
 import { BsBellFill } from 'react-icons/bs';
@@ -20,11 +21,15 @@ export const Navbar = () => {
     const [notify, setnotify] = useState(false);
     const notifytoggle = () => setnotify((prevState) => !prevState);
 
+    const sidebar=()=>{
+        let Sidemenu = document.querySelector("body")
+        Sidemenu.classList.add("showSide")
+    }
     return (
         <div className="container-fluid">
             <nav className="navbar">
-                <div className="nav-brand">
-
+                <div className="nav-brand" onClick={sidebar}>
+                    <BiMenuAltLeft />
                 </div>
 
                 <div className="navbar-items">

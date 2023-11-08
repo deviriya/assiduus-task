@@ -98,8 +98,8 @@ const Dashboard = () => {
                 <div className="col-lg-6">
                     <Card>
                         <CardBody>
-                            <div className="d-flex justify-content-between align-items-center">
-                                <h6 className='m-0'>Checking Accounts</h6>
+                            <div className="d-flex flex-wrap justify-content-between align-items-center">
+                                <h6 className='m-md-0 font-14'>Checking Accounts</h6>
                                 <div className="CstmDrp">
                                     <div class="dropdown">
                                         <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -135,7 +135,7 @@ const Dashboard = () => {
                     <Card>
                         <CardBody>
                             <div className="d-flex justify-content-between align-items-center">
-                                <h6 className='m-0'>Invoices owed to you</h6>
+                                <h6 className='m-0 font-14'>Invoices owed to you</h6>
                                 <div className="CstmDrp">
                                     <button className='primaryBtn'>New sales invoices</button>
                                 </div>
@@ -152,7 +152,7 @@ const Dashboard = () => {
                     <Card>
                         <CardBody>
                             <div className="d-flex justify-content-between align-items-center">
-                                <h6 className='m-0'>Total cash flow</h6>
+                                <h6 className='m-0 font-14'>Total cash flow</h6>
                                 <div className="CstmDrp">
                                     <div className='inbox'>
                                         <BiSolidCheckbox />
@@ -172,7 +172,7 @@ const Dashboard = () => {
                 <div className="col-lg-6">
                     <Card>
                         <CardBody>
-                            <h6 className='m-0'>Account watchlist</h6>
+                            <h6 className='m-0 font-14'>Account watchlist</h6>
                             <hr />
                             <Watchlist />
                         </CardBody>

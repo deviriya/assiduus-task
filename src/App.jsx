@@ -10,6 +10,7 @@ import {
 import Dashboard from './pages/home';
 import { Navbar } from './components/header';
 import { Sidebar } from './components/sidebar';
+import { BlankPage } from './pages/blankpage';
 
 function App() {
 
@@ -38,6 +39,11 @@ function App() {
       <Route>
         <Route path='/' element={<RouteWithSidebar />}>
           <Route index element={<Dashboard />} />
+          <Route path='/accounts' element={<BlankPage />} />
+          <Route path='/payroll' element={<BlankPage />} />
+          <Route path='/reports' element={<BlankPage />} />
+          <Route path='/advisor' element={<BlankPage />} />
+          <Route path='/contacts' element={<BlankPage />} />
         </Route>
       </Route>
     )

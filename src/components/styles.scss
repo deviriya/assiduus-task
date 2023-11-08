@@ -9,6 +9,10 @@
     }
 }
 
+.nav-brand svg{
+    font-size: 18px;
+}
+
 .grpField {
     position: relative;
 
@@ -55,6 +59,7 @@
 // Sidebar
 .sidebar {
     position: fixed;
+    background: #fff;
     left: 0;
     width: 200px;
     height: 100vh;
@@ -81,6 +86,44 @@
                     color: #fff;
                 }
             }
+        }
+    }
+}
+
+.Mbllogo{
+    display: none;
+    padding: .5rem;
+    font-size: 18px;
+}
+
+@media(max-width : 796px) {
+    .Mbllogo{
+        display: block;
+    }
+
+    .sidebar{
+        transform: translateX(-150vw);
+        width: 100vw;
+        height: 100vh;
+        transition: .5s;
+    }
+
+    .showSide .sidebar{
+        transition: .5s;
+        transform: translateX(0);
+    }
+
+    .nav-brand img{
+        display: block;
+    }
+
+    .grpField{
+        .srchIcn{
+            position: relative;
+            top: 0;
+        }
+        input{
+            display: none;
         }
     }
 }

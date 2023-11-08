@@ -3,7 +3,7 @@ import React from "react";
 export const Watchlist = () => {
 
     return (
-        <table class="table table-borderless">
+        <table class="table table-borderless font-14">
             <thead>
                 <tr>
                     <th scope="col">Account</th>

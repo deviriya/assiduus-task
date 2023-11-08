@@ -8,15 +8,28 @@ body {
     scroll-behavior: smooth;
 }
 
+.font-14{
+    font-size: 12px;
+    font-weight: bold;
+}
 .main-content {
     background: #f0f7ff;
-    margin-left: 200px;
-    padding: 1rem;
+}
+
+@media(min-width : 796px) {
+    .main-content {
+        background: #f0f7ff;
+        margin-left: 200px;
+        padding: 1rem;
+    }
+    .font-14{
+        font-size: 14px;
+    }
 }
 
 .CstmDrp {
     display: flex;
-    
+
     .btn {
         border-color: #000;
         margin: 0 10px;
@@ -30,7 +43,7 @@ body {
         }
     }
 
-    .primaryBtn{
+    .primaryBtn {
         background: #dbecff;
         color: green;
         border: none;
@@ -39,14 +52,15 @@ body {
         border-radius: 6px;
     }
 
-    .inbox{
-        svg{
+    .inbox {
+        svg {
             font-size: 22px;
             color: lightskyblue;
         }
     }
-    .outbox{
-        svg{
+
+    .outbox {
+        svg {
             font-size: 22px;
             color: green;
         }
@@ -54,12 +68,13 @@ body {
 }
 
 
-.table{
-    th{
+.table {
+    th {
         font-size: 12px;
         color: #a1a1a1 !important;
     }
-    tr{
+
+    tr {
         font-weight: bold;
     }
 }
